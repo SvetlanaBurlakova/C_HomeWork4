@@ -24,9 +24,11 @@ int GetNumber(string message)
     return result;
 }
 Random rnd =new Random();
+
 int arraySize=rnd.Next(1,9);
+
 int [] array = new int[arraySize];
-int number =0;
+
 for (int i =0; i<arraySize; i++)
 {
     array[i]=GetNumber($"Введите число {i+1}:");
